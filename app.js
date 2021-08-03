@@ -41,7 +41,8 @@ yargs.command({
   command: "list",
   description: "To list out all the notes",
   handler: function () {
-    console.log("Listing all the notes..");
+    console.log(chalk.grey.inverse("Your Lists are as follows: "));
+    notes.listNotes();
   },
 });
 
